@@ -1,0 +1,215 @@
+2025-07-06 11:07:08,217 - INFO - Scheduler started
+2025-07-06 11:07:08,272 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:07:08,272 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:07:08,305 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:07:12,728 - INFO - Scheduler started
+2025-07-06 11:07:12,753 - WARNING -  * Debugger is active!
+2025-07-06 11:07:12,765 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:08:25,376 - INFO - 127.0.0.1 - - [06/Jul/2025 11:08:25] "GET / HTTP/1.1" 200 -
+2025-07-06 11:08:26,292 - INFO - 127.0.0.1 - - [06/Jul/2025 11:08:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-06 11:09:21,335 - INFO - 127.0.0.1 - - [06/Jul/2025 11:09:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:09:21,345 - INFO - 127.0.0.1 - - [06/Jul/2025 11:09:21] "GET / HTTP/1.1" 200 -
+2025-07-06 11:11:06,739 - INFO - Scheduler started
+2025-07-06 11:11:06,796 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:11:06,797 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:11:06,820 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:11:11,799 - INFO - Scheduler started
+2025-07-06 11:11:11,826 - WARNING -  * Debugger is active!
+2025-07-06 11:11:11,835 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:11:37,252 - INFO - 127.0.0.1 - - [06/Jul/2025 11:11:37] "GET / HTTP/1.1" 200 -
+2025-07-06 11:11:38,177 - INFO - 127.0.0.1 - - [06/Jul/2025 11:11:38] "GET / HTTP/1.1" 200 -
+2025-07-06 11:12:21,881 - INFO - 127.0.0.1 - - [06/Jul/2025 11:12:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:12:21,887 - INFO - 127.0.0.1 - - [06/Jul/2025 11:12:21] "GET / HTTP/1.1" 200 -
+2025-07-06 11:13:46,774 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:13:46,776 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:13:46,777 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:13:47,488 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:13:52,337 - INFO - Scheduler started
+2025-07-06 11:13:52,364 - WARNING -  * Debugger is active!
+2025-07-06 11:13:52,375 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:13:57,864 - INFO - Scheduler started
+2025-07-06 11:13:57,908 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:13:57,909 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:13:57,933 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:14:02,882 - INFO - Scheduler started
+2025-07-06 11:14:02,912 - WARNING -  * Debugger is active!
+2025-07-06 11:14:02,923 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:14:10,117 - INFO - 127.0.0.1 - - [06/Jul/2025 11:14:10] "GET / HTTP/1.1" 200 -
+2025-07-06 11:14:39,400 - INFO - 127.0.0.1 - - [06/Jul/2025 11:14:39] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:14:39,418 - INFO - 127.0.0.1 - - [06/Jul/2025 11:14:39] "GET / HTTP/1.1" 200 -
+2025-07-06 11:15:55,429 - INFO - 127.0.0.1 - - [06/Jul/2025 11:15:55] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:15:55,440 - INFO - 127.0.0.1 - - [06/Jul/2025 11:15:55] "GET / HTTP/1.1" 200 -
+2025-07-06 11:20:08,958 - INFO - Scheduler started
+2025-07-06 11:20:09,013 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:20:09,014 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:20:09,038 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:20:15,177 - INFO - Scheduler started
+2025-07-06 11:20:15,204 - WARNING -  * Debugger is active!
+2025-07-06 11:20:15,215 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:21:03,759 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:03] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:03,967 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:03] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:04,203 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:04] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:04,425 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:04] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:04,647 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:04] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:04,855 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:04] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:05,071 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:05] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:05,272 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:05] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:05,471 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:05] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:05,677 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:05] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:05,909 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:05] "GET / HTTP/1.1" 200 -
+2025-07-06 11:21:40,676 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-07-06 11:21:40,680 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:40] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:21:40,687 - INFO - 127.0.0.1 - - [06/Jul/2025 11:21:40] "GET / HTTP/1.1" 200 -
+2025-07-06 11:22:35,888 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-07-06 11:22:35,890 - INFO - 127.0.0.1 - - [06/Jul/2025 11:22:35] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:22:35,896 - INFO - 127.0.0.1 - - [06/Jul/2025 11:22:35] "GET / HTTP/1.1" 200 -
+2025-07-06 11:23:57,567 - INFO - Scheduler started
+2025-07-06 11:23:57,618 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:23:57,618 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:23:57,655 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:24:03,481 - INFO - Scheduler started
+2025-07-06 11:24:03,507 - WARNING -  * Debugger is active!
+2025-07-06 11:24:03,518 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:24:30,469 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:30] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:30,650 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:30] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:30,843 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:30] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:31,034 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:31,235 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:31,453 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:31] "GET / HTTP/1.1" 200 -
+2025-07-06 11:24:56,461 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 404 Not Found"
+2025-07-06 11:24:56,464 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:56] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:24:56,470 - INFO - 127.0.0.1 - - [06/Jul/2025 11:24:56] "GET / HTTP/1.1" 200 -
+2025-07-06 11:25:43,532 - INFO - Scheduler started
+2025-07-06 11:25:43,575 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:25:43,576 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:25:43,596 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:25:49,516 - INFO - Scheduler started
+2025-07-06 11:25:49,542 - WARNING -  * Debugger is active!
+2025-07-06 11:25:49,552 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:26:56,176 - INFO - 127.0.0.1 - - [06/Jul/2025 11:26:56] "GET / HTTP/1.1" 200 -
+2025-07-06 11:27:20,549 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:27:20,550 - INFO - Retrying request to /chat/completions in 0.425445 seconds
+2025-07-06 11:27:21,561 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:27:21,562 - INFO - Retrying request to /chat/completions in 0.962241 seconds
+2025-07-06 11:27:24,624 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:27:24,625 - INFO - 127.0.0.1 - - [06/Jul/2025 11:27:24] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:27:24,637 - INFO - 127.0.0.1 - - [06/Jul/2025 11:27:24] "GET / HTTP/1.1" 200 -
+2025-07-06 11:30:37,158 - INFO - Scheduler started
+2025-07-06 11:30:37,204 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:30:37,205 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:30:37,227 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:30:43,040 - INFO - Scheduler started
+2025-07-06 11:30:43,076 - WARNING -  * Debugger is active!
+2025-07-06 11:30:43,087 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:30:57,846 - INFO - 127.0.0.1 - - [06/Jul/2025 11:30:57] "GET / HTTP/1.1" 200 -
+2025-07-06 11:31:20,618 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:20,619 - INFO - Retrying request to /chat/completions in 0.413104 seconds
+2025-07-06 11:31:21,327 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:21,328 - INFO - Retrying request to /chat/completions in 0.762827 seconds
+2025-07-06 11:31:22,377 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:22,381 - INFO - 127.0.0.1 - - [06/Jul/2025 11:31:22] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:31:22,388 - INFO - 127.0.0.1 - - [06/Jul/2025 11:31:22] "GET / HTTP/1.1" 200 -
+2025-07-06 11:31:52,645 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:52,646 - INFO - Retrying request to /chat/completions in 0.497399 seconds
+2025-07-06 11:31:55,153 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:55,154 - INFO - Retrying request to /chat/completions in 0.960056 seconds
+2025-07-06 11:31:57,879 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:31:57,881 - INFO - 127.0.0.1 - - [06/Jul/2025 11:31:57] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:31:57,887 - INFO - 127.0.0.1 - - [06/Jul/2025 11:31:57] "GET / HTTP/1.1" 200 -
+2025-07-06 11:32:34,520 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:32:34,521 - INFO - Retrying request to /chat/completions in 0.407447 seconds
+2025-07-06 11:32:35,349 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:32:35,350 - INFO - Retrying request to /chat/completions in 0.981564 seconds
+2025-07-06 11:32:36,668 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:32:36,670 - INFO - 127.0.0.1 - - [06/Jul/2025 11:32:36] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:32:36,677 - INFO - 127.0.0.1 - - [06/Jul/2025 11:32:36] "GET / HTTP/1.1" 200 -
+2025-07-06 11:33:30,541 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:33:30,542 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:33:30,813 - INFO -  * Detected change in 'C:\\Python312\\Lib\\re\\__init__.py', reloading
+2025-07-06 11:33:31,794 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:33:37,869 - INFO - Scheduler started
+2025-07-06 11:33:37,894 - WARNING -  * Debugger is active!
+2025-07-06 11:33:37,905 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:33:41,162 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:33:41,163 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\app.py', reloading
+2025-07-06 11:33:42,438 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:33:48,597 - INFO - Scheduler started
+2025-07-06 11:33:48,628 - WARNING -  * Debugger is active!
+2025-07-06 11:33:48,640 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:33:55,833 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\test_parsing.py', reloading
+2025-07-06 11:33:55,841 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\test_parsing.py', reloading
+2025-07-06 11:33:55,842 - INFO -  * Detected change in 'C:\\Users\\LAYA\\OneDrive\\Pictures\\AgenticAI taskRemainder\\test_parsing.py', reloading
+2025-07-06 11:33:56,294 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:34:02,293 - INFO - Scheduler started
+2025-07-06 11:34:02,324 - WARNING -  * Debugger is active!
+2025-07-06 11:34:02,336 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:34:34,780 - INFO - Scheduler started
+2025-07-06 11:34:34,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-06 11:34:34,834 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-06 11:34:34,856 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-06 11:34:40,877 - INFO - Scheduler started
+2025-07-06 11:34:40,904 - WARNING -  * Debugger is active!
+2025-07-06 11:34:40,912 - INFO -  * Debugger PIN: 855-192-855
+2025-07-06 11:34:52,432 - INFO - 127.0.0.1 - - [06/Jul/2025 11:34:52] "GET / HTTP/1.1" 200 -
+2025-07-06 11:35:18,999 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:19,000 - INFO - Retrying request to /chat/completions in 0.397987 seconds
+2025-07-06 11:35:19,805 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:19,807 - INFO - Retrying request to /chat/completions in 0.818537 seconds
+2025-07-06 11:35:20,929 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:21,422 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:21,423 - INFO - Retrying request to /chat/completions in 0.409586 seconds
+2025-07-06 11:35:22,169 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:22,171 - INFO - Retrying request to /chat/completions in 0.896523 seconds
+2025-07-06 11:35:23,680 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:23,682 - ERROR - Error getting AI decisions: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-07-06 11:35:23,713 - INFO - Added job "send_intelligent_reminder" to job store "default"
+2025-07-06 11:35:24,054 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:24,056 - INFO - Retrying request to /chat/completions in 0.464105 seconds
+2025-07-06 11:35:24,860 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:24,861 - INFO - Retrying request to /chat/completions in 0.836797 seconds
+2025-07-06 11:35:26,038 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:35:26,040 - INFO - 127.0.0.1 - - [06/Jul/2025 11:35:26] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:35:26,055 - INFO - 127.0.0.1 - - [06/Jul/2025 11:35:26] "GET / HTTP/1.1" 200 -
+2025-07-06 11:37:00,012 - INFO - Running job "send_intelligent_reminder (trigger: date[2025-07-06 11:37:00 IST], next run at: 2025-07-06 11:37:00 IST)" (scheduled at 2025-07-06 11:37:00+05:30)
+2025-07-06 11:37:00,012 - INFO - Removed job reminder_1
+2025-07-06 11:37:01,024 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:37:01,025 - INFO - Retrying request to /chat/completions in 0.438658 seconds
+2025-07-06 11:37:01,768 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:37:01,769 - INFO - Retrying request to /chat/completions in 0.931615 seconds
+2025-07-06 11:37:03,212 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:37:07,699 - INFO - Job "send_intelligent_reminder (trigger: date[2025-07-06 11:37:00 IST], next run at: 2025-07-06 11:37:00 IST)" executed successfully
+2025-07-06 11:42:08,056 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:08,057 - INFO - Retrying request to /chat/completions in 0.442826 seconds
+2025-07-06 11:42:08,894 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:08,896 - INFO - Retrying request to /chat/completions in 0.770673 seconds
+2025-07-06 11:42:10,018 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:10,622 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:10,624 - INFO - Retrying request to /chat/completions in 0.456969 seconds
+2025-07-06 11:42:11,563 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:11,564 - INFO - Retrying request to /chat/completions in 0.777105 seconds
+2025-07-06 11:42:12,671 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:12,673 - ERROR - Error getting AI decisions: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-07-06 11:42:12,695 - INFO - Added job "send_intelligent_reminder" to job store "default"
+2025-07-06 11:42:13,000 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:13,002 - INFO - Retrying request to /chat/completions in 0.399722 seconds
+2025-07-06 11:42:13,968 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:13,969 - INFO - Retrying request to /chat/completions in 0.782055 seconds
+2025-07-06 11:42:15,049 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:42:15,052 - INFO - 127.0.0.1 - - [06/Jul/2025 11:42:15] "[32mPOST / HTTP/1.1[0m" 302 -
+2025-07-06 11:42:15,061 - INFO - 127.0.0.1 - - [06/Jul/2025 11:42:15] "GET / HTTP/1.1" 200 -
+2025-07-06 11:43:00,005 - INFO - Removed job reminder_2
+2025-07-06 11:43:00,006 - INFO - Running job "send_intelligent_reminder (trigger: date[2025-07-06 11:43:00 IST], next run at: 2025-07-06 11:43:00 IST)" (scheduled at 2025-07-06 11:43:00+05:30)
+2025-07-06 11:43:00,881 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:43:00,883 - INFO - Retrying request to /chat/completions in 0.435216 seconds
+2025-07-06 11:43:01,935 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:43:01,939 - INFO - Retrying request to /chat/completions in 0.882605 seconds
+2025-07-06 11:43:03,406 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-07-06 11:43:07,450 - INFO - Job "send_intelligent_reminder (trigger: date[2025-07-06 11:43:00 IST], next run at: 2025-07-06 11:43:00 IST)" executed successfully

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Task Reminder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 0;
+        }
+        .feature-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .ai-badge {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        .natural-input-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .dashboard-link {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dashboard Link -->
+    <div class="dashboard-link">
+        <a href="/dashboard" class="btn btn-outline-primary">
+            <i class="fas fa-chart-line"></i> Dashboard
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-3">
+                        <i class="fas fa-robot text-warning"></i> Agentic AI Task Reminder
+                    </h1>
+                    <p class="lead mb-4">
+                        Your intelligent AI assistant that learns from your behavior, suggests optimal times, 
+                        and helps you stay productive with personalized insights.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="ai-badge"><i class="fas fa-brain"></i> Learns Your Patterns</span>
+                        <span class="ai-badge"><i class="fas fa-clock"></i> Smart Scheduling</span>
+                        <span class="ai-badge"><i class="fas fa-chart-line"></i> Productivity Insights</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fas fa-robot" style="font-size: 8rem; opacity: 0.8;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                <i class="fas fa-info-circle me-2"></i>{{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <!-- Natural Language Input Section -->
+        <div class="natural-input-section">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3><i class="fas fa-magic text-primary"></i> Natural Language Input</h3>
+                    <p class="text-muted">Describe your task naturally and let AI handle the rest!</p>
+                    <form method="POST" id="naturalForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="natural_input" class="form-label">Describe your task</label>
+                            <textarea class="form-control form-control-lg" id="natural_input" name="natural_input" 
+                                      rows="3" placeholder="e.g., 'Remind me to call John tomorrow at 3pm' or 'I need to finish the report by Friday morning'"></textarea>
+                            <div class="form-text">
+                                <i class="fas fa-lightbulb text-warning"></i> 
+                                Examples: "Call mom this evening", "Submit project by Friday 2pm", "Gym workout tomorrow morning"
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-robot"></i> Let AI Schedule It
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card feature-card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain text-primary" style="font-size: 3rem;"></i>
+                            <h5 class="card-title mt-3">AI Intelligence</h5>
+                            <p class="card-text">The AI analyzes your patterns and suggests optimal times based on your productivity history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Manual Input Section -->
+        <div class="row mt-5">
+            <div class="col-lg-8">
+                <div class="card feature-card">
+                    <div class="card-header bg-light">
+                        <h4><i class="fas fa-cog"></i> Manual Input (Alternative)</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" id="manualForm">
+                            <div class="mb-3">
+                                <label for="manual_email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="manual_email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="task_name" class="form-label">Task Name</label>
+                                <input type="text" class="form-control" id="task_name" name="task_name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reminder_time" class="form-label">Reminder Time</label>
+                                <input type="datetime-local" class="form-control" id="reminder_time" name="reminder_time" required>
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">
+                                <i class="fas fa-clock"></i> Set Manual Reminder
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card feature-card">
+                    <div class="card-body">
+                        <h5><i class="fas fa-chart-line text-success"></i> Features</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Natural language processing</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Intelligent time suggestions</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Personalized reminders</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Learning from your behavior</li>
+                            <li class="mb-2"><i class="fas fa-check text-success"></i> Productivity insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4"><i class="fas fa-question-circle text-primary"></i> How Agentic AI Works</h3>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card text-center">
+                    <div class="card-body">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="card-title mt-3">1. Learn</h5>
+                        <p class="card-text">The AI learns your productivity patterns, preferred times, and task completion habits.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card text-center">
+                    <div class="card-body">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <i class="fas fa-lightbulb" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="card-title mt-3">2. Analyze</h5>
+                        <p class="card-text">It analyzes your current workload and suggests optimal scheduling strategies.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card feature-card text-center">
+                    <div class="card-body">
+                        <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <i class="fas fa-rocket" style="font-size: 1.5rem;"></i>
+                        </div>
+                        <h5 class="card-title mt-3">3. Optimize</h5>
+                        <p class="card-text">The AI continuously improves its suggestions based on your feedback and outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Auto-fill email in manual form when natural form is used
+        document.getElementById('email').addEventListener('input', function() {
+            document.getElementById('manual_email').value = this.value;
+        });
+        
+        // Auto-fill email in natural form when manual form is used
+        document.getElementById('manual_email').addEventListener('input', function() {
+            document.getElementById('email').value = this.value;
+        });
+    </script>
+</body>
+</html> 

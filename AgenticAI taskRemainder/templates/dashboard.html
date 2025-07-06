@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Dashboard - Agentic AI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .dashboard-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+        .insight-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .insight-card:hover {
+            transform: translateY(-5px);
+        }
+        .productivity-score {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #28a745;
+        }
+        .task-item {
+            border-left: 4px solid #007bff;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-radius: 0 10px 10px 0;
+        }
+        .task-completed {
+            border-left-color: #28a745;
+            background: #d4edda;
+        }
+        .task-pending {
+            border-left-color: #ffc107;
+            background: #fff3cd;
+        }
+        .ai-suggestion {
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold">
+                        <i class="fas fa-chart-line"></i> Productivity Dashboard
+                    </h1>
+                    <p class="lead mb-0">AI-powered insights for {{ email }}</p>
+                </div>
+                <div class="col-lg-4 text-end">
+                    <a href="/" class="btn btn-outline-light">
+                        <i class="fas fa-plus"></i> New Reminder
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <!-- AI Insights Section -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <h2><i class="fas fa-brain text-primary"></i> AI Insights</h2>
+            </div>
+            
+            {% if insights and not insights.get('error') %}
+                <div class="col-lg-4">
+                    <div class="card insight-card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tachometer-alt text-primary" style="font-size: 3rem;"></i>
+                            <h4 class="card-title mt-3">Productivity Score</h4>
+                            <div class="productivity-score">
+                                {{ "%.1f"|format(insights.get('productivity_score', 0) * 100) }}%
+                            </div>
+                            <p class="text-muted">Based on your task completion patterns</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card insight-card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-clock text-success"></i> Best Working Hours</h5>
+                            <p class="card-text">{{ insights.get('best_hours', 'Analysis in progress...') }}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="card insight-card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-chart-bar text-warning"></i> Completion Patterns</h5>
+                            <p class="card-text">{{ insights.get('completion_patterns', 'Analysis in progress...') }}</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI Recommendations -->
+                <div class="col-12 mt-4">
+                    <div class="ai-suggestion">
+                        <h5><i class="fas fa-lightbulb"></i> AI Recommendations</h5>
+                        {% if insights.get('recommendations') %}
+                            <ul class="mb-0">
+                                {% for rec in insights.get('recommendations', []) %}
+                                    <li>{{ rec }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            <p class="mb-0">Continue using the system to get personalized recommendations!</p>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <!-- Areas for Improvement -->
+                {% if insights.get('improvement_areas') %}
+                <div class="col-12 mt-3">
+                    <div class="card insight-card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5><i class="fas fa-exclamation-triangle"></i> Areas for Improvement</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="mb-0">
+                                {% for area in insights.get('improvement_areas', []) %}
+                                    <li>{{ area }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                
+            {% else %}
+                <div class="col-12">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> 
+                        Start creating reminders to see your personalized AI insights!
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Task History -->
+        <div class="row">
+            <div class="col-12">
+                <h2><i class="fas fa-history text-primary"></i> Recent Tasks</h2>
+                
+                {% if tasks %}
+                    {% for task in tasks %}
+                        <div class="task-item {% if task[2] == 'completed' %}task-completed{% elif task[2] == None %}task-pending{% endif %}">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h5 class="mb-1">{{ task[0] }}</h5>
+                                    <small class="text-muted">
+                                        <i class="fas fa-calendar"></i> 
+                                        Scheduled: {{ task[1] }}
+                                    </small>
+                                </div>
+                                <div class="col-lg-3">
+                                    <span class="badge {% if task[2] == 'completed' %}bg-success{% elif task[2] == None %}bg-warning{% else %}bg-secondary{% endif %}">
+                                        {% if task[2] == 'completed' %}
+                                            <i class="fas fa-check"></i> Completed
+                                        {% elif task[2] == None %}
+                                            <i class="fas fa-clock"></i> Pending
+                                        {% else %}
+                                            <i class="fas fa-times"></i> {{ task[2] }}
+                                        {% endif %}
+                                    </span>
+                                </div>
+                                <div class="col-lg-3 text-end">
+                                    {% if task[2] == None %}
+                                        <button class="btn btn-sm btn-success me-2" onclick="completeTask('{{ task[0] }}', 'completed')">
+                                            <i class="fas fa-check"></i> Complete
+                                        </button>
+                                        <button class="btn btn-sm btn-danger" onclick="completeTask('{{ task[0] }}', 'missed')">
+                                            <i class="fas fa-times"></i> Missed
+                                        </button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle"></i> No tasks found. Create your first reminder to get started!
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- AI Agent Actions -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2><i class="fas fa-robot text-primary"></i> AI Agent Actions</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card insight-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-magic text-primary" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-3">Get Suggestions</h5>
+                                <p class="card-text">Ask AI for task optimization suggestions</p>
+                                <button class="btn btn-primary" onclick="getSuggestions()">
+                                    <i class="fas fa-lightbulb"></i> Get AI Suggestions
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card insight-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-clock text-success" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-3">Reschedule Tasks</h5>
+                                <p class="card-text">Let AI suggest optimal times for rescheduling</p>
+                                <button class="btn btn-success" onclick="rescheduleTask()">
+                                    <i class="fas fa-calendar-alt"></i> Reschedule
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <div class="card insight-card">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chart-pie text-warning" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-3">Analytics</h5>
+                                <p class="card-text">View detailed productivity analytics</p>
+                                <button class="btn btn-warning" onclick="showAnalytics()">
+                                    <i class="fas fa-chart-bar"></i> View Analytics
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function completeTask(taskName, outcome) {
+            const feedback = prompt('Any feedback about this task? (optional)');
+            
+            fetch('/complete_task', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: '{{ email }}',
+                    task_name: taskName,
+                    outcome: outcome,
+                    feedback: feedback || ''
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    location.reload();
+                } else {
+                    alert('Error recording task outcome');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error recording task outcome');
+            });
+        }
+        
+        function getSuggestions() {
+            const taskName = prompt('Enter task name for suggestions:');
+            if (!taskName) return;
+            
+            fetch('/get_suggestions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: '{{ email }}',
+                    task_name: taskName,
+                    scheduled_time: new Date().toISOString()
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.suggestions) {
+                    alert('AI Suggestions:\n\n' + data.suggestions.join('\n'));
+                } else {
+                    alert('No suggestions available');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error getting suggestions');
+            });
+        }
+        
+        function rescheduleTask() {
+            const taskName = prompt('Enter task name to reschedule:');
+            if (!taskName) return;
+            
+            fetch('/reschedule_task', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    email: '{{ email }}',
+                    task_name: taskName
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.suggested_time) {
+                    alert(`AI suggests rescheduling to: ${data.suggested_time}\n\nReasoning: ${data.reasoning}\n\nConfidence: ${(data.confidence * 100).toFixed(1)}%`);
+                } else {
+                    alert('No rescheduling suggestion available');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error getting rescheduling suggestion');
+            });
+        }
+        
+        function showAnalytics() {
+            alert('Analytics feature coming soon! This will show detailed productivity patterns and trends.');
+        }
+    </script>
+</body>
+</html> 

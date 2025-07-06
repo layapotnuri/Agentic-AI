@@ -1,0 +1,9 @@
+Flask
+APScheduler
+yagmail
+openai
+numpy
+pandas
+scikit-learn
+python-dotenv
+requests 
