@@ -10,14 +10,14 @@ import sqlite3
 import re
 
 app = Flask(__name__)
-app.secret_key = '148fa85b227a841e5683cc19135c6588a75b7f13023b5b3d3367017e80b396ad'
+app.secret_key = 'secret_key'
 
 # Configure your Gmail credentials here
-GMAIL_USER = os.environ.get('GMAIL_USER', 'layamaheswari2003@gmail.com')
-GMAIL_APP_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD','dcskojosqtalnzqw')
+GMAIL_USER = os.environ.get('GMAIL_USER', 'Your@gmail.com')
+GMAIL_APP_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD','app_password')
 
 # Configure OpenAI API
-OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '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')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', 'your_key')
 
 # Initialize OpenAI client
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
